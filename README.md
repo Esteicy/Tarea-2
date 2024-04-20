@@ -19,6 +19,7 @@ $$D = 2*16.7+5 = 38.4\tau$$
 Además, se calculó el tamaño de las compuertas necesarias para cumplir con las especifiaciones.
 
 $$z= \frac{500*1}{5.779} = 86.52\lambda$$
+
 $$x= \frac{86.52*2}{5.779} = 30\lambda$$
 
 A continuación, es necesario calcular los tiempos de retardo mediante la aproximación de Elmore.
