@@ -4,6 +4,7 @@
 ## Compuertas simples
 ## Compuerta compleja
 Usando la función lógica base, se puede obtener la compuerta compleja or-or-and-invert + invert mostrada a continuación.
+
 ![alt text](Esquematico.png)
 
 El cual se vería de la siguiente forma a nivel de transistores.
