@@ -1,4 +1,5 @@
 # Tarea-2 Introducción al diseño de circuitos integrados
+
 # Teoría
 
 En este informe se plantean dos diseños estáticos de CMOS para la siguiente función lógica: 
@@ -80,7 +81,34 @@ Una vez teniendo las compuertas creadas en esquematico, se procede a armar el ci
 
 ![alt text](imagenes_simple/compuertas.png)
 
-### Cálculo de los tiempos de retraso
+### Tiempos de retraso
+
+Con diferentes entradas de estímulo se obtienen los siguientes tiempos de retraso de propagación y de contaminación:
+
+$t_{pdr}$
+
+![alt text](imagenes_simple/tpdr.png)
+
+$t_{pdf}$
+
+![alt text](imagenes_simple/tpdf.png)
+
+$t_{cdr}$
+
+![alt text](imagenes_simple/tcdr.png)
+
+$t_{cdf}$
+
+![alt text](imagenes_simple/tcdf.png)
+
+### Layout de compuerta
+El layout de la compuerta NOR se muestra en la siguiente figura:
+
+![alt text](imagenes_simple/layout.png)
+
+Y el layout después de pasar todas las verificaciones:
+
+![alt text](imagenes_simple/layout_verificiones.png)
 
 ## Compuerta compleja
 
