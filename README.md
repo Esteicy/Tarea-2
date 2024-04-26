@@ -138,19 +138,19 @@ A continuación, es necesario calcular los tiempos de retardo mediante la aproxi
 
 ![alt text](imagenes_complejo/Tpdr.png)
 
-$tpdr=31.4\tau$
+$tpdr=(\dfrac{R}{10})(20C)+(\dfrac{2R}{147C}) = 31.4\tau$
 
-![alt text](imagenes_complejo/Tpdr.png)
-
-$tpdf=30.4\tau$
-
-![alt text](imagenes_complejo/Tpdr.png)
+![alt text](imagenes_complejo/Tcdr.png)
 
 $tcdr=\dfrac{147}{2}\tau$
 
-![alt text](imagenes_complejo/Tpdr.png)
+![alt text](imagenes_complejo/tdpf.png)
 
-$tcdr=\dfrac{147}{2}\tau$
+$tpdf= (\dfrac{R}{10})(10C) + (\dfrac{2R}{10})(147C) = 30.4\tau$
+
+![alt text](imagenes_complejo/tcdf.png)
+
+$tcdf=\dfrac{147}{2}\tau$
 
 
 
