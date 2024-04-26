@@ -144,7 +144,7 @@ $tpdr=(\dfrac{R}{10})(20C)+(\dfrac{2R}{147C}) = 31.4\tau$
 
 $tcdr=\dfrac{147}{2}\tau$
 
-![alt text](imagenes_complejo/tdpf.png)
+![alt text](imagenes_complejo/tpdf.png)
 
 $tpdf= (\dfrac{R}{10})(10C) + (\dfrac{2R}{10})(147C) = 30.4\tau$
 
@@ -242,6 +242,10 @@ Para los caminos de Euler se tienen los de Pull Up y Pull Down como se muestra a
 |Pull Up|Pull Down|
 |--|--|
 |![alt text](imagenes_complejo/pullup.png)|![alt text](imagenes_complejo/pulldown.png)|
+
+De lo anterior se obtiene que el orden de las conexiones en el diagrama de palitos son D-C-A-B.
+
+![alt text](imagenes_complejo/complejo_palitos.jpg)
 
 ### Layout de compuerta
 A continuación se muestra como queda el circuito en simulación del layout:
