@@ -140,11 +140,23 @@ A continuación, es necesario calcular los tiempos de retardo mediante la aproxi
 
 $tpdr=31.4\tau$
 
+![alt text](imagenes_complejo/Tpdr.png)
+
 $tpdf=30.4\tau$
 
-$tcdr=\dfrac{147}{2}\tau$
+![alt text](imagenes_complejo/Tpdr.png)
 
 $tcdr=\dfrac{147}{2}\tau$
+
+![alt text](imagenes_complejo/Tpdr.png)
+
+$tcdr=\dfrac{147}{2}\tau$
+
+
+
+
+
+
 
 # Simulación
 
