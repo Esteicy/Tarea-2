@@ -153,10 +153,43 @@ $tpdf= (\dfrac{R}{10})(10C) + (\dfrac{2R}{10})(147C) = 30.4\tau$
 $tcdf=\dfrac{147}{2}\tau$
 
 
+### Potencia dinámica
 
+Para el cálculo de la potencia dinámica se utiliza la siguiente ecuación:
 
+$P_{switching}=\alpha CV_{DD}^{2}f$
 
+Para poder averiguar su valor primero hay que averiguar cada parámetro. A continuación se muestra el cálculo de cada uno:
 
+1. Factor de actividad ($\alpha$)
+
+Este se calcula mediante las probabilidades, en la siguiente figura se muestran los valores calculados para las compuertas simples:
+
+![alt text](imagenes_simple/factor.png)
+
+Y este es el de la compuerta compleja:
+
+![alt text](imagenes_complejo/factor.png)
+
+2. Frecuencia mínima
+
+Para calcular el tiempo de retardo se utiliza el $\tau=2.87\times10^{-12}$ (calculado de la tarea anterior) y con los tiempos de retardo de propagación calculados anteriormente, entonces queda de la siguiente:
+
+$t_{pdr}=16\tau= 4.592\times^{-11}s$
+
+$t_{pdf}=\dfrac{173}{6}\tau= 82.75\times^{-12}s$
+
+$t_{min}=128.67\times10{-12}s$
+
+Con este tiempo mínimo se calcula la frecuencia máxima como:
+
+$f_{max}=7.77GHz$
+
+3. Potencia dinámica
+
+Ya con los parámetros calculados se puede calcular la potencia dinámica:
+
+$P_{switching}=0.246\cdot500\cdot0.487fF\cdot1.8^{2}\cdot7.776GHz=1.51mW$
 
 # Simulación
 
@@ -253,6 +286,7 @@ A continuación se muestra como queda el circuito en simulación del layout:
 ![alt text](imagenes_complejo/layoutComplejo.png)
 
 Y así se muestra cuando pasa por todas las verificaciones de la simulación:
+
 ![alt text](imagenes_complejo/layoutverificado.png)
 
 ### Tiempos de retardo con capacitancias parásitas
