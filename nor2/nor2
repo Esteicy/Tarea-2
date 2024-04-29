@@ -1,0 +1,76 @@
+*  Generated for: FineSimProVCS
+*  Design library name: basic_cells
+*  Design cell name: test_nor
+*  Design view name: config
+
+.option finesim_output=fsdb finesim_merge_fsdb=1
+
+
+.temp 25
+.lib '/mnt/vol_NFS_rh003/Est_VLSI_I_2024/Quiros_Rodriguez_I_2024_vlsi/tutorial/Hspice/lp5mos/xt018.lib' tm
+.lib '/mnt/vol_NFS_rh003/Est_VLSI_I_2024/Quiros_Rodriguez_I_2024_vlsi/tutorial/Hspice/lp5mos/param.lib' 3s
+.lib '/mnt/vol_NFS_rh003/Est_VLSI_I_2024/Quiros_Rodriguez_I_2024_vlsi/tutorial/Hspice/lp5mos/config.lib' default
+
+*Custom Compiler Version U-2023.03-SP2
+*Sun Apr 28 23:38:27 2024
+
+.global gnd vdd_
+********************************************************************************
+* Library          : basic_cells
+* Cell             : nor2
+* View             : starrc_C
+* View Search List : schematic hspice symbol
+* View Stop List   : symbol
+********************************************************************************
+.subckt nor2 a b q
+cg5_3 b gnd  c=3.83766e-16
+c5_2 b a  c=9.59565e-17
+c5_1 b q  c=2.1963e-16
+cg4_2 a gnd  c=3.82853e-16
+c4_1 a q  c=2.50425e-16
+cg1_1 q gnd  c=1.73354e-16
+x2 q a gnd gnd ne w=0.42u l=0.21u as=0.7104p ad=0.1134p ps=4.14u pd=0.96u nrs=-1
++ nrd=-1 m='1*1' par1='1*1' xf_subext=0
+x1 q b gnd gnd ne w=0.42u l=0.21u as=0.7104p ad=0.1134p ps=4.14u pd=0.96u nrs=-1
++ nrd=-1 m='1*1' par1='1*1' xf_subext=0
+x5 n_7 a q vdd_ pe w=0.72u l=0.21u as=0.3456p ad=0.09p ps=2.4u pd=0.97u nrs=-1
++ nrd=-1 m='1*1' par1='1*1' xf_subext=0
+x4 vdd_ b n_7 vdd_ pe w=0.72u l=0.21u as=0.09p ad=1.168p ps=0.97u pd=4.9u nrs=-1
++ nrd=-1 m='1*1' par1='1*1' xf_subext=0
+.ends nor2
+
+********************************************************************************
+* Library          : basic_cells
+* Cell             : test_nor
+* View             : schematic
+* View Search List : schematic hspice symbol
+* View Stop List   : symbol
+********************************************************************************
+v28 d gnd dc=0 pulse ( 0 1.8 0 100p 100p 0.8n 1.8n )
+v27 c gnd dc=0 pulse ( 0 1.8 0 100p 100p 0.8n 1.8n )
+v26 b gnd dc=0 pulse ( 0 1.8 0 100p 100p 0.8n 1.8n )
+v24 a gnd dc=0 pulse ( 0 1.8 0 100p 100p 0.8n 1.8n )
+xi7 a b net42 nor2
+xi9 net42 net43 out nor2
+xi8 c d net43 nor2
+c10 out gnd c=5f
+v12 vdd_ gnd dc=1.8
+
+
+
+
+
+
+.tran 10p 15n
+
+.option PARHIER = LOCAL
+.option finesim_mode = spicead
+.option s_elem_cache_dir = "/home/Quiros_Rodriguez_I_2024_vlsi/.synopsys_custom/sparam_dir"
+.option pva_output_dir = "/home/Quiros_Rodriguez_I_2024_vlsi/.synopsys_custom/pva_dir"
+
+.print P(v12)
+.measure pwr AVG P(v12) FROM=0ns TO=10ns
+
+
+.end
+
