@@ -1,7 +1,6 @@
 # Tarea-2 Introducción al diseño de circuitos integrados
 
-Esteicy Jazmín Faerron Durán
-Andrew José Quirós Rodríguez
+Esteicy Jazmín Faerron Durán - Andrew José Quirós Rodríguez
 
 # Teoría
 
