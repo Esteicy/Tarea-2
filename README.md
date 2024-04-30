@@ -255,7 +255,7 @@ Con estos tiempos se puede comparar la diferencia con los que se calcularon en l
 |$t_{cdr}$|29.65|232|7.8|
 |$t_{cdf}$|52.37|247|4.7|
 
-Como se puede observar en la tabla, los resultados de la simulación son muy distintos a los calculados en la teoría.
+Como se puede observar en la tabla, los resultados de la simulación son muy distintos a los calculados en la teoría, por lo que no se puede basar solo en el esfuerzo lógico para calcular dichos tiempos a nivel teórico.
 
 ### Caminos de Euler y diagrama de palitos
 
