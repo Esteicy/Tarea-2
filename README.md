@@ -250,10 +250,10 @@ Con estos tiempos se puede comparar la diferencia con los que se calcularon en l
 
 |Tiempo|Teórico (ps)|Simulado (ps)|Simulado/Teórico [ps]|
 |--|--|--|--|
-|$t_{pdr}$|45.92|285|6.2|
-|$t_{pdf}$|82.75|283|3.4|
-|$t_{cdr}$|29.65|232|7.8|
-|$t_{cdf}$|52.37|247|4.7|
+|$t_{pdr}$|45.92|156|3.39|
+|$t_{pdf}$|82.75|235|2.83|
+|$t_{cdr}$|29.65|147|4.95|
+|$t_{cdf}$|52.37|190|3.62|
 
 Como se puede observar en la tabla, los resultados de la simulación son muy distintos a los calculados en la teoría, por lo que no se puede basar solo en el esfuerzo lógico para calcular dichos tiempos a nivel teórico.
 
