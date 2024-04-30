@@ -94,7 +94,7 @@ Ahora sumando todos los tiempos para obtener los finales:
 
 $t_{pdr}=8\tau+8\tau=16\tau$
 
-$t_{cpr}=\dfrac{13\tau}{3}+6\tau=\dfrac{31}{3}$
+$t_{cpr}=\dfrac{13\tau}{3}+6\tau=\dfrac{31}{3}\tau$
 
 $t_{pdf}=\dfrac{13}{3}\tau+\dfrac{49}{2}\tau=\dfrac{173}{6}\tau$
 
