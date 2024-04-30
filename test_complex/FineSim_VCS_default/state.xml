@@ -1,0 +1,17 @@
+<?xml version="1.0"?>
+<!--Created by Custom Compiler (TM), build , on Tue Apr 23 15:20:57 2024-->
+<file-format name="stateData" version="1.0">
+ <attribute name="dcop_splitted" value="0" type="giBoolean"/>
+ <attribute name="description" value="" type="giString"/>
+ <attribute name="design" value="basic_cells/test_complex/schematic" type="dmCellView"/>
+ <attribute name="enabled" value="1" type="giBoolean"/>
+ <attribute name="enabledJobClass" value="0" type="giBoolean"/>
+ <attribute name="migratedSimulator" value="" type="giString"/>
+ <attribute name="name" value="FineSim_VCS_default" type="giString"/>
+ <attribute name="openaccessState" value="basic_cells/test_complex/FineSim_VCS_default" type="dmCellView"/>
+ <attribute name="simulator" value="FineSimProVCS" type="giString"/>
+ <comment></comment>
+ <resultsDir>~/simulation</resultsDir>
+ <enableTestbenchHistory>0</enableTestbenchHistory>
+ <integration version="1"/>
+</file-format>
