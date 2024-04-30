@@ -14,7 +14,7 @@ Por otra parte, se solicita que el tamaño máximo de cada entrada sea de 30 $\l
 ### Definición de compuertas
 
 Para poder definir cuáles compuertas se van a utilizar se debe tomar en cuenta que se utiliza la lógica invertida, y así es como resulta el diseño:
-![design](imagenes_simple/diseno_compuertas.png)
+![design](archivos/imagenes_simple/diseno_compuertas.png)
 
 ### Definición de tamaño de compuertas
 
@@ -36,19 +36,19 @@ $x=\dfrac{122.47\cdot\dfrac{5}{3}}{6.804}=30$
 
 Y así se vería el circuito con el tamaño de cada compuerta:
 
-![gatesize](imagenes_simple/gatesize.png)
+![gatesize](archivos/imagenes_simple/gatesize.png)
 
 ### Definición del tamaño de los transistores
 
 Como una NOR debe tener un tamaño de 4 en PMOS y de 1 en el NMOS para un total de 5 de entrada, entonces la distribución ahora será la misma pero la suma de ambas debe dar 30 en el caso de las compuertas de la izquierda y 122 para la compuerta de la derecha, dando como resultado:
 
-![size](imagenes_simple/size.png)
+![size](archivos/imagenes_simple/size.png)
 
 ### Diseño del esquemático
 
 Como cada compuerta NOR está separada, solo se requiere del diseño de una NOR de 2 entradas y los tamaños cambian, así queda de la siguiente manera:
 
-![alt text](imagenes_simple/esquematico_simple.png)
+![alt text](archivos/imagenes_simple/esquematico_simple.png)
 
 ### Tiempos de retardo
 
@@ -58,7 +58,7 @@ Con la aproximación de Elmore se obtienen los retardos que se muestran a contin
 
 Rise
 
-![alt text](imagenes_simple/ElmoreRise.png)
+![alt text](archivos/imagenes_simple/ElmoreRise.png)
 
 $tpdr=\dfrac{R}{12}\cdot 24C + \dfrac{2R}{12}\cdot 36C = 8\tau$
 
@@ -66,7 +66,7 @@ $tcdr=\dfrac{2R}{12}\cdot 26C = \dfrac{13}{3}\tau$
 
 Fall
 
-![alt text](imagenes_simple/ElmoreFall.png)
+![alt text](archivos/imagenes_simple/ElmoreFall.png)
 
 $tpdf=\dfrac{R}{6}\cdot 26C=\dfrac{13}{3}\tau$
 
@@ -76,7 +76,7 @@ $tcdf=\dfrac{13}{6}\tau$
 
 Rise
 
-![alt text](imagenes_simple/ElmoreRise122.png)
+![alt text](archivos/imagenes_simple/ElmoreRise122.png)
 
 $tpdr=\dfrac{R}{49}\cdot 98 + \dfrac{2R}{49}\cdot 147C = 8\tau$
 
@@ -84,7 +84,7 @@ $tcdr=\dfrac{2R}{49}\cdot 147C = 6\tau$
 
 Fall
 
-![alt text](imagenes_simple/ElmoreFall122.png)
+![alt text](archivos/imagenes_simple/ElmoreFall122.png)
 
 $tpdf=\dfrac{R}{6}\cdot 147C= \dfrac{49}{2}\tau$
 
@@ -112,7 +112,7 @@ Para poder averiguar su valor primero hay que averiguar cada parámetro. A conti
 
 Este se calcula mediante las probabilidades, en la siguiente figura se muestran los valores calculados para las compuertas simples:
 
-![alt text](imagenes_simple/factor.png)
+![alt text](archivos/imagenes_simple/factor.png)
 
 2. Frecuencia mínima
 
@@ -140,7 +140,7 @@ $P_{switching}=0.246\cdot500\cdot0.487fF\cdot1.8^{2}\cdot7.776GHz=1.51mW$
 
 Usando la función lógica base, se puede obtener la compuerta compleja or-or-and-invert + invert mostrada a continuación.
 
-![alt text](imagenes_complejo/Esquematico.png)
+![alt text](archivos/imagenes_complejo/Esquematico.png)
 
 ### Definición de tamaño de compuertas
 
@@ -158,31 +158,31 @@ $$x= \frac{86.52*2}{5.779} = 30\lambda$$
 
 Dando como resultado la siguiente figura del circuito con sus respectivos tamaños:
 
-![alt text](imagenes_complejo/size.png)
+![alt text](archivos/imagenes_complejo/size.png)
 
 ### Definición del tamaño de los transistores
 
 El circuito lógico anterior a nivel de transistores se muestra a continuación con sus respectivos tamaños calculados:
 
-![alt text](imagenes_complejo/Transistores.png)
+![alt text](archivos/imagenes_complejo/Transistores.png)
 
 ### Tiempos de retardo de Elmore
 
 A continuación, es necesario calcular los tiempos de retardo mediante la aproximación de Elmore.
 
-![alt text](imagenes_complejo/Tpdr.png)
+![alt text](archivos/imagenes_complejo/Tpdr.png)
 
 $tpdr=(\dfrac{R}{10})(20C)+(\dfrac{2R}{147C}) = 31.4\tau$
 
-![alt text](imagenes_complejo/Tcdr.png)
+![alt text](archivos/imagenes_complejo/Tcdr.png)
 
 $tcdr=\dfrac{147}{2}\tau$
 
-![alt text](imagenes_complejo/tpdf.png)
+![alt text](archivos/imagenes_complejo/tpdf.png)
 
 $tpdf= (\dfrac{R}{10})(10C) + (\dfrac{2R}{10})(147C) = 30.4\tau$
 
-![alt text](imagenes_complejo/tcdf.png)
+![alt text](archivos/imagenes_complejo/tcdf.png)
 
 $tcdf=\dfrac{147}{2}\tau$
 
@@ -190,7 +190,7 @@ $tcdf=\dfrac{147}{2}\tau$
 
 1. Factor de actividad
 
-![alt text](imagenes_complejo/factor.png)
+![alt text](archivos/imagenes_complejo/factor.png)
 
 2. Frecuencia mínima
 
@@ -214,17 +214,17 @@ $P_{switching}=0.0586\cdot500\cdot0.487fF\cdot1.8^{2}\cdot5.638GHz=0.261mW$
 
 Para el tamaño de las compuertas, solo se multiplica los tamaños mínimos de los transistores (NMOS de 220n y PMOS de 440n) por los tamaños que se calcularon. Y resulta el siguiente esquemático en simulación:
 
-Compuerta de 30
+[Compuerta de 30](archivos/nor2x1_24_6/schematic/)
 
-![alt text](imagenes_simple/sim_esquematico30.png)
+![alt text](archivos/imagenes_simple/sim_esquematico30.png)
 
-Compuerta de 122
+[Compuerta de 122](archivos/nor2x1_98_24/schematic/)
 
-![alt text](imagenes_simple/sim_esquematico122.png)
+![alt text](archivos/imagenes_simple/sim_esquematico122.png)
 
-Una vez teniendo las compuertas creadas en esquematico, se procede a armar el circuito de compuertas completo, como se muestra en la siguiente figura:
+Una vez teniendo las compuertas creadas en esquematico, se procede a armar el [circuito de compuertas completo](archivos/SimpleDesign/schematic/), como se muestra en la siguiente figura:
 
-![alt text](imagenes_simple/compuertas.png)
+![alt text](archivos/imagenes_simple/compuertas.png)
 
 ### Tiempos de retardo
 
@@ -232,34 +232,34 @@ Con diferentes entradas de estímulo se obtienen los siguientes tiempos de retar
 
 $t_{pdr}$
 
-![alt text](imagenes_simple/tpdr.png)
+![alt text](archivos/imagenes_simple/tpdr.png)
 
 $t_{pdf}$
 
-![alt text](imagenes_simple/tpdf.png)
+![alt text](archivos/imagenes_simple/tpdf.png)
 
 $t_{cdr}$
 
-![alt text](imagenes_simple/tcdr.png)
+![alt text](archivos/imagenes_simple/tcdr.png)
 
 $t_{cdf}$
 
-![alt text](imagenes_simple/tcdf.png)
+![alt text](archivos/imagenes_simple/tcdf.png)
 
 ### Caminos de Euler y diagrama de palitos
 
 Para un circuito de compuertas simples, no es necesario hacer un análisis de caminos de Euler, debido a que cada cada compuerta en individual, por otro lado, para el diagrama de palitos se muestra el de una compuerta NOR, como está compuesto de 3 NOR el circuito simple, cada compuerta utiliza uno igual para cada una. Este se muestra a continuación:
 
-![alt text](imagenes_simple/diagramaPalitos.png)
+![alt text](archivos/imagenes_simple/diagramaPalitos.png)
 
 ### Layout de compuerta
-El [layout](nor2/layout/) de la compuerta NOR se muestra en la siguiente figura:
+El [layout](archivos/nor2/layout/) de la compuerta NOR se muestra en la siguiente figura:
 
-![alt text](imagenes_simple/layout.png)
+![alt text](archivos/imagenes_simple/layout.png)
 
 Y el layout después de pasar todas las verificaciones:
 
-![alt text](imagenes_simple/layout_verificiones.png)
+![alt text](archivos/imagenes_simple/layout_verificiones.png)
 
 ### Tiempos de retardo con capacitancias parásitas
 
@@ -273,7 +273,7 @@ Estos tiempos son los resultados de la medición después de realizar el layout 
 
 ### Potencia
 
-Para la simulación, la potencia se saca con el siguiente [script](nor2/nor2):
+Para la simulación, la potencia se saca con el siguiente [script](archivos/nor2/nor2):
 
 ```
 *  Generated for: FineSimProVCS
@@ -348,15 +348,15 @@ v12 vdd_ gnd dc=1.8
 
 De esta forma se obtiene en este caso que la pontencia es:
 
-$Potencia = $
+$Potencia = 413.7\mu W = 0.413mW$
 
 ## Compuerta compleja
 
 ### Esquemático 
 
-Para el circuito complejo el [esquemático](complex/schematic/) en simulación queda de la siguiente forma:
+Para el circuito complejo el [esquemático](archivos/complex/schematic/) en simulación queda de la siguiente forma:
 
-![alt text](imagenes_complejo/esquematicoSim.png)
+![alt text](archivos/imagenes_complejo/esquematicoSim.png)
 
 ### Tiempos de retardo
 
@@ -371,20 +371,20 @@ Para los caminos de Euler se tienen los de Pull Up y Pull Down como se muestra a
 
 |Pull Up|Pull Down|
 |--|--|
-|![alt text](imagenes_complejo/pullup.png)|![alt text](imagenes_complejo/pulldown.png)|
+|![alt text](archivos/imagenes_complejo/pullup.png)|![alt text](archivos/imagenes_complejo/pulldown.png)|
 
 De lo anterior se obtiene que el orden de las conexiones en el diagrama de palitos son D-C-A-B.
 
-![alt text](imagenes_complejo/complejo_palitos.jpg)
+![alt text](archivos/imagenes_complejo/complejo_palitos.jpg)
 
 ### Layout de compuerta
-A continuación se muestra como queda el circuito en simulación del [layout](complex/layout/):
+A continuación se muestra como queda el circuito en simulación del [layout](archivos/complex/layout/):
 
-![alt text](imagenes_complejo/layoutComplejo.png)
+![alt text](archivos/imagenes_complejo/layoutComplejo.png)
 
 Y así se muestra cuando pasa por todas las verificaciones de la simulación:
 
-![alt text](imagenes_complejo/layoutverificado.png)
+![alt text](archivos/imagenes_complejo/layoutverificado.png)
 
 ### Tiempos de retardo con capacitancias parásitas
 
@@ -395,7 +395,7 @@ Y así se muestra cuando pasa por todas las verificaciones de la simulación:
 
 ### Potencia
 
-Para la potencia de este circuito en la simulación se obtiene con el siguiente script:
+Para la potencia de este circuito en la simulación se obtiene con el siguiente [script](archivos/test_complex_mixta/simu_complex.spp):
 
 ```
 *  Generated for: FineSimProVCS
@@ -487,7 +487,7 @@ c6 out gnd c=5f
 
 De este script se obtiene el siguiente resultado:
 
-$Potencia = 71.3792$
+$Potencia = 71.3792\mu W  = 0.07138mW$
 
 # Bilbiografía
 [1] N. Weste and D. Harris, CMOS VLSI Design: A Circuits and Systems Perspective, 4 edition. Boston: 
