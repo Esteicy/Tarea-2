@@ -1,5 +1,8 @@
 # Tarea-2 Introducción al diseño de circuitos integrados
 
+Esteicy Jazmín Faerron Durán
+Andrew José Quirós Rodríguez
+
 # Teoría
 
 En este informe se plantean dos diseños estáticos de CMOS para la siguiente función lógica: 
