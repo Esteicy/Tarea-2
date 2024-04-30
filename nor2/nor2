@@ -11,9 +11,6 @@
 .lib '/mnt/vol_NFS_rh003/Est_VLSI_I_2024/Quiros_Rodriguez_I_2024_vlsi/tutorial/Hspice/lp5mos/param.lib' 3s
 .lib '/mnt/vol_NFS_rh003/Est_VLSI_I_2024/Quiros_Rodriguez_I_2024_vlsi/tutorial/Hspice/lp5mos/config.lib' default
 
-*Custom Compiler Version U-2023.03-SP2
-*Sun Apr 28 23:38:27 2024
-
 .global gnd vdd_
 ********************************************************************************
 * Library          : basic_cells
@@ -46,19 +43,15 @@ x4 vdd_ b n_7 vdd_ pe w=0.72u l=0.21u as=0.09p ad=1.168p ps=0.97u pd=4.9u nrs=-1
 * View Search List : schematic hspice symbol
 * View Stop List   : symbol
 ********************************************************************************
-v28 d gnd dc=0 pulse ( 0 1.8 0 100p 100p 0.8n 1.8n )
-v27 c gnd dc=0 pulse ( 0 1.8 0 100p 100p 0.8n 1.8n )
-v26 b gnd dc=0 pulse ( 0 1.8 0 100p 100p 0.8n 1.8n )
-v24 a gnd dc=0 pulse ( 0 1.8 0 100p 100p 0.8n 1.8n )
+v28 d gnd dc=0 pulse ( 0 1.8 0 100p 100p 0.3n 0.8n )
+v27 c gnd dc=0 pulse ( 0 1.8 0 100p 100p 0.3n 0.8n )
+v26 b gnd dc=0 pulse ( 0 1.8 0 100p 100p 0.3n 0.8n )
+v24 a gnd dc=0 pulse ( 0 1.8 0 100p 100p 0.3n 0.8n )
 xi7 a b net42 nor2
 xi9 net42 net43 out nor2
 xi8 c d net43 nor2
 c10 out gnd c=5f
 v12 vdd_ gnd dc=1.8
-
-
-
-
 
 
 .tran 10p 15n
