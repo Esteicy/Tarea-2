@@ -246,6 +246,17 @@ $t_{cdf}$
 
 ![alt text](archivos/imagenes_simple/tcdf.png)
 
+Con estos tiempos se puede comparar la diferencia con los que se calcularon en la teoría en la siguiente tabla se muestra dicha comparación:
+
+|Tiempo|Teórico (ps)|Simulado (ps)|Simulado/Teórico [ps]|
+|--|--|--|--|
+|$t_{pdr}$|45.92|285|6.2|
+|$t_{pdf}$|82.75|283|3.4|
+|$t_{cdr}$|29.65|232|7.8|
+|$t_{cdf}$|52.37|247|4.7|
+
+Como se puede observar en la tabla, los resultados de la simulación son muy distintos a los calculados en la teoría.
+
 ### Caminos de Euler y diagrama de palitos
 
 Para un circuito de compuertas simples, no es necesario hacer un análisis de caminos de Euler, debido a que cada cada compuerta en individual, por otro lado, para el diagrama de palitos se muestra el de una compuerta NOR, como está compuesto de 3 NOR el circuito simple, cada compuerta utiliza uno igual para cada una. Este se muestra a continuación:
@@ -376,6 +387,15 @@ Para el circuito complejo el [esquemático](archivos/complex/schematic/) en simu
 |--|--|--|
 |rise|82.9|93.9|
 |fall|107|136|
+
+En comparación con los tiempos calculados en la parte teórica se muestra la siguiente tabla comparativa:
+
+|Tiempo|Teórico (ps)|Simulado (ps)|Simulado/Teórico [ps]|
+|--|--|--|--|
+|$t_{pdr}$|90.118|93.9|1.04|
+|$t_{pdf}$|87.248|136|1.55|
+|$t_{cdr}$|210|82.9|0.39|
+|$t_{cdf}$|210|107|0.5|
 
 ### Caminos de Euler y diagrama de palitos
 
