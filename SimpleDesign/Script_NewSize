@@ -1,0 +1,86 @@
+*  Generated for: FineSimProVCS
+*  Design library name: basic_cells
+*  Design cell name: SimpleDesign
+*  Design view name: schematic
+
+.option finesim_output=fsdb finesim_merge_fsdb=1
+
+
+.temp 25
+.lib '/mnt/vol_NFS_rh003/Est_VLSI_I_2024/Faerron_Duran_I_2024_vlsi/tutorial/Hspice/lp5mos/xt018.lib' tm
+.lib '/mnt/vol_NFS_rh003/Est_VLSI_I_2024/Faerron_Duran_I_2024_vlsi/tutorial/Hspice/lp5mos/param.lib' 3s
+.lib '/mnt/vol_NFS_rh003/Est_VLSI_I_2024/Faerron_Duran_I_2024_vlsi/tutorial/Hspice/lp5mos/config.lib' default
+
+*Custom Compiler Version U-2023.03-SP2
+*Fri Apr 19 19:38:39 2024
+
+.global gnd
+********************************************************************************
+* Library          : basic_cells
+* Cell             : nor2x1_24_6
+* View             : schematic
+* View Search List : hspice hspiceD schematic verilog functional behavioral vhdl_config vhdl spice veriloga verilogams
+* View Stop List   : hspice hspiceD functional behavioral symbol
+********************************************************************************
+.subckt nor2x1_24_6 q a b
+xm3 q a gnd gnd ne w=220n l=180n as=7.48e-14 ad=5.94e-14 ps=9.73333e-07 pd=7.6e-07
++ nrs=1.22727 nrd=1.22727 m='1*6' par1='1*6' xf_subext=0
+xm2 q b gnd gnd ne w=220n l=180n as=7.48e-14 ad=5.94e-14 ps=9.73333e-07 pd=7.6e-07
++ nrs=1.22727 nrd=1.22727 m='1*6' par1='1*6' xf_subext=0
+xm13 q b net2 net2 pe w=440n l=180n as=1.265e-13 ad=1.188e-13 ps=1.05167e-06 pd=9.8e-07
++ nrs=0.613636 nrd=0.613636 m='1*24' par1='1*24' xf_subext=0
+xm12 net2 a net1 net1 pe w=440n l=180n as=1.265e-13 ad=1.188e-13 ps=1.05167e-06
++ pd=9.8e-07 nrs=0.613636 nrd=0.613636 m='1*24' par1='1*24' xf_subext=0
+vdd net1 gnd dc=1.8
+.ends nor2x1_24_6
+
+********************************************************************************
+* Library          : basic_cells
+* Cell             : nor2x1_98_24
+* View             : schematic
+* View Search List : hspice hspiceD schematic verilog functional behavioral vhdl_config vhdl spice veriloga verilogams
+* View Stop List   : hspice hspiceD functional behavioral symbol
+********************************************************************************
+.subckt nor2x1_98_24 input1 input2 output
+xm5 output input2 gnd gnd ne w=220n l=180n as=6.1248e-14 ad=6.1248e-14 ps=7.856e-07
++ pd=7.856e-07 nrs=1.22727 nrd=1.22727 m='1*25' par1='1*25' xf_subext=0
+xm6 output input1 gnd gnd ne w=220n l=180n as=6.1248e-14 ad=6.1248e-14 ps=7.856e-07
++ pd=7.856e-07 nrs=1.22727 nrd=1.22727 m='1*25' par1='1*25' xf_subext=0
+xm4 output input2 net2 net2 pe w=440n l=180n as=1.20686e-13 ad=1.188e-13 ps=9.97551e-07
++ pd=9.8e-07 nrs=0.613636 nrd=0.613636 m='1*98' par1='1*98' xf_subext=0
+xm3 net2 input1 net1 net1 pe w=440n l=180n as=1.20686e-13 ad=1.188e-13 ps=9.97551e-07
++ pd=9.8e-07 nrs=0.613636 nrd=0.613636 m='1*98' par1='1*98' xf_subext=0
+v14 net1 gnd dc=1.8
+.ends nor2x1_98_24
+
+********************************************************************************
+* Library          : basic_cells
+* Cell             : SimpleDesign
+* View             : schematic
+* View Search List : hspice hspiceD schematic verilog functional behavioral vhdl_config vhdl spice veriloga verilogams
+* View Stop List   : hspice hspiceD functional behavioral symbol
+********************************************************************************
+xi9 input2 c d nor2x1_24_6
+xi0 input1 a b nor2x1_24_6
+xi2 input1 input2 output nor2x1_98_24
+vd d gnd dc=0 pulse ( 0 1.8 0 100p 100p 2n 4.2n )
+vc c gnd dc=0 pulse ( 0 1.8 0 100p 100p 2n 4.2n )
+vb b gnd dc=0 pulse ( 0 1.8 0 100p 100p 2n 4.2n )
+va a gnd dc=0 pulse ( 0 1.8 0 100p 100p 2n 4.2n )
+
+
+
+
+
+
+.tran 10ps 15ns
+
+.option PARHIER = LOCAL
+.option finesim_mode = spicead
+.option s_elem_cache_dir = "/home/Faerron_Duran_I_2024_vlsi/.synopsys_custom/sparam_dir"
+.option pva_output_dir = "/home/Faerron_Duran_I_2024_vlsi/.synopsys_custom/pva_dir"
+
+
+
+
+.end
