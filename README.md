@@ -270,6 +270,18 @@ Estos tiempos son los resultados de la medición después de realizar el layout 
 |rise|232|285|
 |fall|247|283|
 
+### Comparación de tiempos
+
+En base a los resultados obtenidos de la simulación antes y después del trazado, se obtiene la siguente tabla comparativa:
+
+|Tiempo|Sin parasitas (ps)|Con parasitas (ps)|con parasitas/sin parasitas [ps]|
+|--|--|--|--|
+|$t_{pdr}$|156|285|1.8|
+|$t_{pdf}$|235|283|1.2|
+|$t_{cdr}$|147|232|1.5|
+|$t_{cdf}$|190|247|1.3|
+
+En estos resultados se puede observar la gran diferencia entre ambos, demostrando que con capacitancias parásitas aumenta el tiempo de manera significativa, hasta llegar a casi el doble en el caso de $t_{pdr}$.
 
 ### Potencia
 
@@ -392,6 +404,19 @@ Y así se muestra cuando pasa por todas las verificaciones de la simulación:
 |--|--|--|
 |rise|149|194|
 |fall|170|186|
+
+### Comparación de tiempos
+
+En base a los resultados obtenidos de la simulación antes y después del trazado, se obtiene la siguente tabla comparativa:
+
+|Tiempo|Sin parasitas (ps)|Con parasitas (ps)|con parásitas/sin parásitas [ps]|
+|--|--|--|--|
+|$t_{pdr}$|93.9|194|2.06|
+|$t_{pdf}$|136|186|1.36|
+|$t_{cdr}$|82.9|149|1.79|
+|$t_{cdf}$|107|170|1.58|
+
+En este caso al igual que en el circuito de compuertas simples, se puede observar que el tiempo aumenta con capacitancias parásitas, en donde en este sí llega a ser el doble en el caso del $t_{pdr}$.
 
 ### Potencia
 
